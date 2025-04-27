@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c2d9c87951.js" crossorigin="anonymous"></script></head>
+<body>
+
+    <div class="container">
+        
+        <div class="wrapper">
+        <h1>Password Generator</h1>
+        <div class="display_container">
+            <input readonly placeholder="password" class="display" data-password-display>
+            <button data-copy>
+                <div data-copymsg>copy</div>
+            </button>
+        </div>
+        <div class="input_container">
+            <div class="length_container">
+                <p class="upper" style="display: inline;">password length : </p>
+                <p class="upper" style="display: inline; font-weight: bold; font-size: 18px;" data-length-number>0</p>
+                
+            </div>
+    
+            <input type="range" min="1" max="20" class="slider" step="1" data-length-slide>
+    
+            <div>
+                <input  type="checkbox" id="uppercase">
+                <label class="text" for="uppercase">Include uppercase letter</label>
+            </div>
+            <div>
+                <input  type="checkbox" id="lowercase">
+                <label class="text" for="lowercase">Include lowercase letter</label>
+            </div>
+            <div>
+                <input  type="checkbox" id="numbers">
+                <label class="text" for="numbers">Include numbers</label>
+            </div>
+            <div>
+                <input  type="checkbox" id="symbols">
+                <label class="text" for="symbols">Include symbols</label>
+            </div>
+    
+            <div class="strength">
+                <p>strength</p>
+                <div class="ind" data-indicator></div>
+            </div>
+    
+            <button class="generatebtn">Generate password</button>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
