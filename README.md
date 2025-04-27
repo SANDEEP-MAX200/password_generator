@@ -1,2 +1,3 @@
 # password_generator
-html css js 
+Just HTML JS CSS 
+firstt JS project 
